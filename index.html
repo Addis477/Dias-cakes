@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="DIA'S CAKES - Have a sweet day! Premium cakes & pies in Addis Ababa, Ethiopia. Freshly baked with love.">
+    <meta name="theme-color" content="#FFFFFF">
+    <title>DIA'S CAKES | Have a sweet day! | Premium Cakes & Pies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+        <h3>🎂 DIA'S CAKES</h3>
+        <button class="close-sidebar" id="closeSidebarBtn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sidebar-nav">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-heart"></i> About</a>
+        <a href="menu.html"><i class="fas fa-birthday-cake"></i> Menu</a>
+        <a href="order.html"><i class="fas fa-shopping-bag"></i> Order</a>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Contact</a>
+    </div>
+    <a href="order.html" class="sidebar-order-btn"><i class="fas fa-shopping-cart"></i> ORDER NOW</a>
+    <div class="sidebar-footer">
+        <p><i class="fas fa-phone-alt"></i> +251 661 978 974</p>
+        <p><i class="fas fa-envelope"></i> dias@cakes.com</p>
+        <p><i class="fas fa-location-dot"></i> Gerli Mehditash, Addis Ababa</p>
+    </div>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Header -->
+<header class="main-header">
+    <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <div class="logo">
+            <a href="index.html">
+                <h1>🎂 DIA'S CAKES</h1>
+                <span>Have a sweet day!</span>
+            </a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="order.html" class="btn-order"><i class="fas fa-shopping-cart"></i> Order Now</a>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9582?w=1920&h=800&fit=crop');"></div>
+        <div class="hero-overlay-light"></div>
+        <div class="container hero-content">
+            <h1>Have a <span class="highlight">sweet day!</span> 🎂</h1>
+            <p>Premium cakes & pies made with love in Addis Ababa</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="hero-btn">Explore Menu →</a>
+                <a href="order.html" class="hero-btn-secondary">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <div class="category-nav-horizontal">
+        <button class="cat-filter-btn active" data-filter="all">🍰 All Treats</button>
+        <button class="cat-filter-btn" data-filter="cakes">🎂 Cakes</button>
+        <button class="cat-filter-btn" data-filter="pies">🥧 Pies</button>
+        <button class="cat-filter-btn" data-filter="specials">✨ Specials</button>
+    </div>
+
+    <!-- Featured Products -->
+    <section class="container">
+        <h2 class="section-title">🍰 Our Sweet Favorites</h2>
+        <div class="cards-grid" id="productsGrid">
+            <div class="product-card" data-category="cakes">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9582?w=400&h=300&fit=crop" class="card-image" alt="Chocolate Cake">
+                <div class="card-content">
+                    <div class="card-badge">Bestseller</div>
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich, moist chocolate layers with ganache</p>
+                    <div class="price">ETB 350</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="cakes">
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=300&fit=crop" class="card-image" alt="Vanilla Cake">
+                <div class="card-content">
+                    <h3>Vanilla Cake</h3>
+                    <p>Classic vanilla with buttercream frosting</p>
+                    <div class="price">ETB 280</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="cakes">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" class="card-image" alt="Red Velvet">
+                <div class="card-content">
+                    <div class="card-badge">New</div>
+                    <h3>Red Velvet Cake</h3>
+                    <p>Velvety smooth with cream cheese frosting</p>
+                    <div class="price">ETB 420</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="pies">
+                <img src="https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=400&h=300&fit=crop" class="card-image" alt="Apple Pie">
+                <div class="card-content">
+                    <h3>Apple Pie</h3>
+                    <p>Classic apple pie with cinnamon</p>
+                    <div class="price">ETB 220</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="pies">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" class="card-image" alt="Cherry Pie">
+                <div class="card-content">
+                    <h3>Cherry Pie</h3>
+                    <p>Sweet cherry filling, golden crust</p>
+                    <div class="price">ETB 240</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="specials">
+                <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&h=300&fit=crop" class="card-image" alt="Cheesecake">
+                <div class="card-content">
+                    <div class="card-badge">Special</div>
+                    <h3>New York Cheesecake</h3>
+                    <p>Creamy, rich, with berry topping</p>
+                    <div class="price">ETB 380</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Freshly Baked</h3>
+                    <p>Every cake and pie is baked fresh daily</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Made with Love</h3>
+                    <p>Quality ingredients in every bite</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Free Delivery</h3>
+                    <p>On orders over ETB 1,000</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Custom Orders</h3>
+                    <p>Cakes for any celebration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">🎂 DIA'S CAKES</div>
+                <p class="tagline">Have a sweet day!</p>
+                <p>Premium Cakes & Pies<br>Addis Ababa, Ethiopia</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul class="hours">
+                    <li>Monday - Saturday</li>
+                    <li><strong>8:00 AM - 8:00 PM</strong></li>
+                    <li>Sunday</li>
+                    <li><strong>9:00 AM - 6:00 PM</strong></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> +251 661 978 974</li>
+                    <li><i class="fas fa-envelope"></i> dias@cakes.com</li>
+                    <li><i class="fas fa-location-dot"></i> Gerli Mehditash, Addis Ababa</li>
+                </ul>
+                <div class="payment-badge">
+                    <span>We Accept:</span>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-university"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DIA'S CAKES — Have a sweet day! | Premium Cakes & Pies | Addis Ababa, Ethiopia</p>
+            <p class="footer-heart">✨ Made with love, baked fresh daily ✨</p>
+        </div>
+    </div>
+</footer>
+
+<div id="toastMsg" class="toast-msg">✓ Added to cart</div>
+<script src="js/main.js"></script>
+<script>
+    // Category filter for home page
+    const filterBtns = document.querySelectorAll('.cat-filter-btn');
+    const products = document.querySelectorAll('.product-card');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.getAttribute('data-filter');
+            products.forEach(product => {
+                if (filter === 'all' || product.getAttribute('data-category') === filter) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
