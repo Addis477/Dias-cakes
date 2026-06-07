@@ -8,9 +8,19 @@
     <title>DIA'S CAKES | Have a sweet day! | Premium Cakes & Pies</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- Page Transition Overlay -->
+<div class="page-transition"></div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/251661978974?text=Hello%20DIA'S%20CAKES%2C%20I%20would%20like%20to%20place%20an%20order%20%F0%9F%8E%82" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Order on WhatsApp</span>
+</a>
 
 <!-- Mobile Sidebar -->
 <div class="mobile-sidebar" id="mobileSidebar">
@@ -58,7 +68,7 @@
 <!-- Main Content -->
 <main>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
         <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1920&h=800&fit=crop');"></div>
         <div class="hero-overlay-light"></div>
         <div class="container hero-content">
@@ -72,7 +82,7 @@
     </section>
 
     <!-- Beautiful Colored Label Category Filters -->
-    <div class="category-wrapper">
+    <div class="category-wrapper" data-aos="fade-up" data-aos-delay="100">
         <div class="category-container">
             <button class="cat-btn active" data-cat="all">
                 <i class="fas fa-th-large"></i>
@@ -93,8 +103,8 @@
         </div>
     </div>
 
-    <!-- Featured Products - 12 Products -->
-    <section class="container">
+    <!-- Featured Products -->
+    <section class="container" data-aos="fade-up" data-aos-delay="200">
         <h2 class="section-title">🍰 Our Sweet Favorites</h2>
         <div class="cards-grid" id="productsGrid">
             <!-- Cake 1 - Chocolate Cake -->
@@ -132,18 +142,7 @@
                 </div>
             </div>
             
-            <!-- Cake 4 - Carrot Cake -->
-            <div class="product-card" data-cat="cakes">
-                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400&h=300&fit=crop" class="card-image" alt="Carrot Cake">
-                <div class="card-content">
-                    <h3>Carrot Cake</h3>
-                    <p>With walnuts and cream cheese frosting</p>
-                    <div class="price">ETB 380</div>
-                    <a href="order.html" class="shop-now-btn">Order Now →</a>
-                </div>
-            </div>
-            
-            <!-- Cake 5 - Black Forest Cake -->
+            <!-- Cake 4 - Black Forest Cake -->
             <div class="product-card" data-cat="cakes">
                 <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&h=300&fit=crop" class="card-image" alt="Black Forest">
                 <div class="card-content">
@@ -166,40 +165,7 @@
                 </div>
             </div>
             
-            <!-- Pie 2 - Cherry Pie -->
-            <div class="product-card" data-cat="pies">
-                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" class="card-image" alt="Cherry Pie">
-                <div class="card-content">
-                    <h3>Cherry Pie</h3>
-                    <p>Sweet cherry filling, golden crust</p>
-                    <div class="price">ETB 240</div>
-                    <a href="order.html" class="shop-now-btn">Order Now →</a>
-                </div>
-            </div>
-            
-            <!-- Pie 3 - Pecan Pie -->
-            <div class="product-card" data-cat="pies">
-                <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400&h=300&fit=crop" class="card-image" alt="Pecan Pie">
-                <div class="card-content">
-                    <h3>Pecan Pie</h3>
-                    <p>Rich, nutty, and sweet</p>
-                    <div class="price">ETB 280</div>
-                    <a href="order.html" class="shop-now-btn">Order Now →</a>
-                </div>
-            </div>
-            
-            <!-- Pie 4 - Lemon Meringue Pie -->
-            <div class="product-card" data-cat="pies">
-                <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&h=300&fit=crop" class="card-image" alt="Lemon Pie">
-                <div class="card-content">
-                    <h3>Lemon Meringue Pie</h3>
-                    <p>Tangy lemon with fluffy meringue</p>
-                    <div class="price">ETB 250</div>
-                    <a href="order.html" class="shop-now-btn">Order Now →</a>
-                </div>
-            </div>
-            
-            <!-- Special 1 - New York Cheesecake -->
+            <!-- Special - Cheesecake -->
             <div class="product-card" data-cat="specials">
                 <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&h=300&fit=crop" class="card-image" alt="Cheesecake">
                 <div class="card-content">
@@ -210,34 +176,51 @@
                     <a href="order.html" class="shop-now-btn">Order Now →</a>
                 </div>
             </div>
-            
-            <!-- Special 2 - Gourmet Cupcakes -->
-            <div class="product-card" data-cat="specials">
-                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop" class="card-image" alt="Cupcakes">
-                <div class="card-content">
-                    <div class="card-badge">Special</div>
-                    <h3>Gourmet Cupcakes</h3>
-                    <p>Set of 6, assorted flavors</p>
-                    <div class="price">ETB 320</div>
-                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+        </div>
+    </section>
+
+    <!-- ========== GIFT CARD SECTION (PREMIUM) ========== -->
+    <section class="gift-card-section" data-aos="fade-up">
+        <div class="container">
+            <div class="gift-card-wrapper">
+                <div class="gift-card-content">
+                    <div class="gift-card-icon">
+                        <i class="fas fa-gift"></i>
+                        <i class="fas fa-heart heart-icon"></i>
+                    </div>
+                    <h2>Give the Gift of Sweetness</h2>
+                    <p>Surprise your loved ones with a DIA'S CAKES gift card. Perfect for birthdays, anniversaries, or just because!</p>
+                    <div class="gift-card-options">
+                        <div class="gift-amount">
+                            <span>ETB 200</span>
+                            <span>ETB 500</span>
+                            <span>ETB 1000</span>
+                            <span>Custom</span>
+                        </div>
+                        <div class="gift-card-form">
+                            <input type="email" placeholder="Recipient's email" id="giftEmail">
+                            <input type="text" placeholder="Your name" id="giftName">
+                            <textarea rows="2" placeholder="Personal message (optional)" id="giftMessage"></textarea>
+                            <button id="buyGiftBtn" class="gift-btn">Buy Gift Card →</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Special 3 - Fudgy Brownies -->
-            <div class="product-card" data-cat="specials">
-                <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=400&h=300&fit=crop" class="card-image" alt="Brownies">
-                <div class="card-content">
-                    <h3>Fudgy Brownies</h3>
-                    <p>Rich chocolate brownies with walnuts</p>
-                    <div class="price">ETB 180</div>
-                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                <div class="gift-card-preview">
+                    <div class="card-preview">
+                        <div class="preview-front">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h3>DIA'S CAKES</h3>
+                            <p>Have a sweet day!</p>
+                            <div class="preview-amount">ETB ___</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features-section">
+    <section class="features-section" data-aos="fade-up">
         <div class="container">
             <div class="features-grid">
                 <div class="feature-card">
@@ -322,21 +305,25 @@
 </footer>
 
 <div id="toastMsg" class="toast-msg">✓ Added to cart</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 <script>
-    // Beautiful Colored Category Filter
+    // Initialize AOS animations
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+    });
+    
+    // Category filter
     const categoryBtns = document.querySelectorAll('.cat-btn');
     const allProducts = document.querySelectorAll('.product-card');
     
     categoryBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            // Remove active class from all buttons
             categoryBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
             this.classList.add('active');
-            // Get category
             const category = this.getAttribute('data-cat');
-            // Filter products with animation
             allProducts.forEach(product => {
                 if (category === 'all' || product.getAttribute('data-cat') === category) {
                     product.style.display = 'block';
@@ -346,6 +333,19 @@
                 }
             });
         });
+    });
+    
+    // Gift Card Button
+    document.getElementById('buyGiftBtn')?.addEventListener('click', function() {
+        const email = document.getElementById('giftEmail')?.value;
+        if (!email) {
+            showToast('⚠️ Please enter recipient email');
+            return;
+        }
+        showToast('🎁 Gift card purchased! Check your email for details.');
+        document.getElementById('giftEmail').value = '';
+        document.getElementById('giftName').value = '';
+        document.getElementById('giftMessage').value = '';
     });
 </script>
 </body>
