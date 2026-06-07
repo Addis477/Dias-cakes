@@ -57,7 +57,7 @@
 
 <!-- Main Content -->
 <main>
-    <!-- Hero Section with Beautiful Cake Image -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1920&h=800&fit=crop');"></div>
         <div class="hero-overlay-light"></div>
@@ -71,19 +71,30 @@
         </div>
     </section>
 
-    <!-- Category Filters -->
-    <div class="category-nav-horizontal">
-        <button class="cat-filter-btn active" data-filter="all">🍰 All Treats</button>
-        <button class="cat-filter-btn" data-filter="cakes">🎂 Cakes</button>
-        <button class="cat-filter-btn" data-filter="pies">🥧 Pies</button>
-        <button class="cat-filter-btn" data-filter="specials">✨ Specials</button>
+    <!-- Category Filters - Clean New Style -->
+    <div class="category-wrapper">
+        <div class="category-container">
+            <button class="cat-btn active" data-cat="all">
+                <i class="fas fa-th-large"></i> All
+            </button>
+            <button class="cat-btn" data-cat="cakes">
+                <i class="fas fa-birthday-cake"></i> Cakes
+            </button>
+            <button class="cat-btn" data-cat="pies">
+                <i class="fas fa-chart-pie"></i> Pies
+            </button>
+            <button class="cat-btn" data-cat="specials">
+                <i class="fas fa-star"></i> Specials
+            </button>
+        </div>
     </div>
 
-    <!-- Featured Products -->
+    <!-- Featured Products - More Products Added -->
     <section class="container">
         <h2 class="section-title">🍰 Our Sweet Favorites</h2>
         <div class="cards-grid" id="productsGrid">
-            <div class="product-card" data-category="cakes">
+            <!-- Cakes -->
+            <div class="product-card" data-cat="cakes">
                 <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9582?w=400&h=300&fit=crop" class="card-image" alt="Chocolate Cake">
                 <div class="card-content">
                     <div class="card-badge">Bestseller</div>
@@ -93,7 +104,7 @@
                     <a href="order.html" class="shop-now-btn">Order Now →</a>
                 </div>
             </div>
-            <div class="product-card" data-category="cakes">
+            <div class="product-card" data-cat="cakes">
                 <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=300&fit=crop" class="card-image" alt="Vanilla Cake">
                 <div class="card-content">
                     <h3>Vanilla Cake</h3>
@@ -102,7 +113,7 @@
                     <a href="order.html" class="shop-now-btn">Order Now →</a>
                 </div>
             </div>
-            <div class="product-card" data-category="cakes">
+            <div class="product-card" data-cat="cakes">
                 <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" class="card-image" alt="Red Velvet">
                 <div class="card-content">
                     <div class="card-badge">New</div>
@@ -112,7 +123,17 @@
                     <a href="order.html" class="shop-now-btn">Order Now →</a>
                 </div>
             </div>
-            <div class="product-card" data-category="pies">
+            <div class="product-card" data-cat="cakes">
+                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400&h=300&fit=crop" class="card-image" alt="Carrot Cake">
+                <div class="card-content">
+                    <h3>Carrot Cake</h3>
+                    <p>With walnuts and cream cheese frosting</p>
+                    <div class="price">ETB 380</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <!-- Pies -->
+            <div class="product-card" data-cat="pies">
                 <img src="https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=400&h=300&fit=crop" class="card-image" alt="Apple Pie">
                 <div class="card-content">
                     <h3>Apple Pie</h3>
@@ -121,7 +142,7 @@
                     <a href="order.html" class="shop-now-btn">Order Now →</a>
                 </div>
             </div>
-            <div class="product-card" data-category="pies">
+            <div class="product-card" data-cat="pies">
                 <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" class="card-image" alt="Cherry Pie">
                 <div class="card-content">
                     <h3>Cherry Pie</h3>
@@ -130,13 +151,61 @@
                     <a href="order.html" class="shop-now-btn">Order Now →</a>
                 </div>
             </div>
-            <div class="product-card" data-category="specials">
+            <div class="product-card" data-cat="pies">
+                <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400&h=300&fit=crop" class="card-image" alt="Pecan Pie">
+                <div class="card-content">
+                    <h3>Pecan Pie</h3>
+                    <p>Rich, nutty, and sweet</p>
+                    <div class="price">ETB 280</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-cat="pies">
+                <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&h=300&fit=crop" class="card-image" alt="Lemon Pie">
+                <div class="card-content">
+                    <h3>Lemon Meringue Pie</h3>
+                    <p>Tangy lemon with fluffy meringue</p>
+                    <div class="price">ETB 250</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <!-- Specials -->
+            <div class="product-card" data-cat="specials">
                 <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&h=300&fit=crop" class="card-image" alt="Cheesecake">
                 <div class="card-content">
                     <div class="card-badge">Special</div>
                     <h3>New York Cheesecake</h3>
                     <p>Creamy, rich, with berry topping</p>
                     <div class="price">ETB 380</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-cat="specials">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop" class="card-image" alt="Cupcakes">
+                <div class="card-content">
+                    <div class="card-badge">Special</div>
+                    <h3>Gourmet Cupcakes</h3>
+                    <p>Set of 6, assorted flavors</p>
+                    <div class="price">ETB 320</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-cat="cakes">
+                <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&h=300&fit=crop" class="card-image" alt="Black Forest">
+                <div class="card-content">
+                    <div class="card-badge">Bestseller</div>
+                    <h3>Black Forest Cake</h3>
+                    <p>Chocolate, cherries, and whipped cream</p>
+                    <div class="price">ETB 450</div>
+                    <a href="order.html" class="shop-now-btn">Order Now →</a>
+                </div>
+            </div>
+            <div class="product-card" data-cat="specials">
+                <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=400&h=300&fit=crop" class="card-image" alt="Brownies">
+                <div class="card-content">
+                    <h3>Fudgy Brownies</h3>
+                    <p>Rich chocolate brownies with walnuts</p>
+                    <div class="price">ETB 180</div>
                     <a href="order.html" class="shop-now-btn">Order Now →</a>
                 </div>
             </div>
@@ -231,18 +300,19 @@
 <div id="toastMsg" class="toast-msg">✓ Added to cart</div>
 <script src="js/main.js"></script>
 <script>
-    // Category filter for home page
-    const filterBtns = document.querySelectorAll('.cat-filter-btn');
-    const products = document.querySelectorAll('.product-card');
+    // Category filter - Clean new style
+    const categoryBtns = document.querySelectorAll('.cat-btn');
+    const allProducts = document.querySelectorAll('.product-card');
     
-    filterBtns.forEach(btn => {
+    categoryBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            filterBtns.forEach(b => b.classList.remove('active'));
+            categoryBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            const filter = this.getAttribute('data-filter');
-            products.forEach(product => {
-                if (filter === 'all' || product.getAttribute('data-category') === filter) {
+            const category = this.getAttribute('data-cat');
+            allProducts.forEach(product => {
+                if (category === 'all' || product.getAttribute('data-cat') === category) {
                     product.style.display = 'block';
+                    product.style.animation = 'fadeInUp 0.4s ease';
                 } else {
                     product.style.display = 'none';
                 }
