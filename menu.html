@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | DIA'S CAKES | Have a sweet day!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header"><h3>🎂 DIA'S CAKES</h3><button class="close-sidebar" id="closeSidebarBtn"><i class="fas fa-times"></i></button></div>
+    <div class="sidebar-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-heart"></i> About</a>
+        <a href="menu.html" class="active"><i class="fas fa-birthday-cake"></i> Menu</a>
+        <a href="order.html"><i class="fas fa-shopping-bag"></i> Order</a>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Contact</a>
+    </div>
+    <a href="order.html" class="sidebar-order-btn"><i class="fas fa-shopping-cart"></i> ORDER NOW</a>
+    <div class="sidebar-footer"><p><i class="fas fa-phone"></i> +251 661 978 974</p></div>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<header class="main-header">
+    <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <div class="logo"><a href="index.html"><h1>🎂 DIA'S CAKES</h1><span>Have a sweet day!</span></a></div>
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="order.html" class="btn-order"><i class="fas fa-shopping-cart"></i> Order Now</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?w=1920&h=800&fit=crop');"></div>
+        <div class="hero-overlay-light"></div>
+        <div class="container hero-content">
+            <h1>Our Sweet Menu</h1>
+            <p>Cakes, pies, and more made fresh daily</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="category-nav-horizontal">
+            <button class="cat-filter-btn active" data-filter="all">🍰 All</button>
+            <button class="cat-filter-btn" data-filter="cakes">🎂 Cakes</button>
+            <button class="cat-filter-btn" data-filter="pies">🥧 Pies</button>
+            <button class="cat-filter-btn" data-filter="specials">✨ Specials</button>
+        </div>
+
+        <div class="cards-grid">
+            <div class="product-card" data-category="cakes">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9582?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Chocolate Cake</h3><p>Rich chocolate layers with ganache</p><div class="price">ETB 350</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+            <div class="product-card" data-category="cakes">
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Vanilla Cake</h3><p>Classic vanilla buttercream</p><div class="price">ETB 280</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+            <div class="product-card" data-category="cakes">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Red Velvet Cake</h3><p>Cream cheese frosting</p><div class="price">ETB 420</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+            <div class="product-card" data-category="cakes">
+                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Carrot Cake</h3><p>With walnuts and cream cheese</p><div class="price">ETB 380</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+            <div class="product-card" data-category="pies">
+                <img src="https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Apple Pie</h3><p>Classic with cinnamon</p><div class="price">ETB 220</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+            <div class="product-card" data-category="pies">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Cherry Pie</h3><p>Sweet cherry filling</p><div class="price">ETB 240</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+            <div class="product-card" data-category="pies">
+                <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Pecan Pie</h3><p>Rich, nutty, and sweet</p><div class="price">ETB 280</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+            <div class="product-card" data-category="specials">
+                <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>New York Cheesecake</h3><p>Creamy with berry topping</p><div class="price">ETB 380</div><a href="order.html" class="shop-now-btn">Order Now →</a></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer"><div class="container"><div class="footer-grid"><div class="footer-col"><div class="footer-logo">🎂 DIA'S CAKES</div><p class="tagline">Have a sweet day!</p></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="order.html">Order</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-phone"></i> +251 661 978 974</li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 DIA'S CAKES — Have a sweet day! 🎂</p></div></div></footer>
+
+<div id="toastMsg" class="toast-msg">✓ Added to cart</div>
+<script src="js/main.js"></script>
+<script>
+    document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.getAttribute('data-filter');
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.style.display = (filter === 'all' || card.getAttribute('data-category') === filter) ? 'block' : 'none';
+            });
+        });
+    });
+</script>
+</body>
+</html>
